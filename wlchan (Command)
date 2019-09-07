@@ -1,0 +1,65 @@
+{
+  "name": "wlchan",
+  "permissions": "ADMINISTRATOR",
+  "restriction": "1",
+  "actions": [
+    {
+      "condition": "2",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "7",
+      "name": "Check Parameters"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "stops",
+      "changeType": "0",
+      "value": "1",
+      "name": "Control Server Data"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "ID",
+      "name": "Store Channel Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "IDChannelWWWW",
+      "changeType": "0",
+      "value": "tempVars(\"ID\")",
+      "name": "Control Server Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "**Welcome and leave messages will now be sent to ${mentionedChannel}**",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "**Mention a channel to send the messages too*",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ],
+  "_id": "WyplZ"
+}
