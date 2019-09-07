@@ -1,0 +1,103 @@
+{
+  "name": "togglemessages",
+  "permissions": "ADMINISTRATOR",
+  "restriction": "1",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "stop",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "stop",
+      "name": "Store Server Data"
+    },
+    {
+      "storage": "1",
+      "varName": "stop",
+      "comparison": "2",
+      "value": "2",
+      "iftrue": "2",
+      "iftrueVal": "5",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "stop",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "8",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "stop",
+      "comparison": "1",
+      "value": "0",
+      "iftrue": "2",
+      "iftrueVal": "11",
+      "iffalse": "2",
+      "iffalseVal": "11",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Welcome messages will be shown.",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "stop",
+      "changeType": "0",
+      "value": "1",
+      "name": "Control Server Data"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "welcome messages wont be shown anymore.",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "stop",
+      "changeType": "0",
+      "value": "2",
+      "name": "Control Server Data"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Welcome message command system activated.\nWelcome messages will be shown.",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "stop",
+      "changeType": "0",
+      "value": "1",
+      "name": "Control Server Data"
+    }
+  ]
+}
